@@ -41,3 +41,15 @@ moreDetailsBtns.forEach((item) => {
 });
 
 modalCloseBtn.addEventListener("click", closeModal);
+
+//show modal on 50% page height
+function showModalByScroll() {
+  if (window.pageYOffset >= document.body.scrollHeight / 2) {
+    openModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+window.addEventListener("scroll", showModalByScroll);
+
+//scroll animation
+AOS.init();
