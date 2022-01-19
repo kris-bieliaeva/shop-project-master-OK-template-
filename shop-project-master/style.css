@@ -189,7 +189,7 @@ input::-webkit-input-placeholder {
 }
 .product {
   width: 270px;
-  height: 650px;
+  height: 100%;
   border: 1px solid white;
   margin-top: 30px;
 }
@@ -298,6 +298,37 @@ span {
   position: absolute;
   top: 35px;
   right: 50px;
+}
+.product-quantity {
+  margin-left: 30px;
+}
+.quantity-input {
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin-top: 20px;
+}
+.increment-button,
+.decrement-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin-top: 20px;
+}
+.increment-button:hover,
+.decrement-button:hover {
+  background-color: white;
+  color: #2c71b8;
 }
 .btn-details {
   width: 210px;
